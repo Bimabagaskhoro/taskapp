@@ -45,12 +45,12 @@ class PesertaHandler {
   // belum
   async getPesertaByIdHandler(request, h) {
     const { id } = request.params;
-    const pesertas = await this._service.getPesertaById(id);
+    const data = await this._service.getPesertaById(id);
     //peserta.kegiatan = await this._service.getKegiatanByPesertaId(id);
 
     const response = h.response({
       status: "success",
-      pesertas,
+      data,
     });
 
     return response;
