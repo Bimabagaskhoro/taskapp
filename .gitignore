@@ -1,0 +1,4 @@
+node_modules
+backend-app.pem
+.env
+.prod.env
