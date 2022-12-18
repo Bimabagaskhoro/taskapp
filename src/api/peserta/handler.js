@@ -50,9 +50,7 @@ class PesertaHandler {
 
     const response = h.response({
       status: "success",
-      data: {
-        pesertas,
-      },
+      pesertas,
     });
 
     return response;
