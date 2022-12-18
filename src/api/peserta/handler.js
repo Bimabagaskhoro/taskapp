@@ -33,10 +33,10 @@ class PesertaHandler {
 
   // done
   async getPesertaHandler() {
-    const peserta = await this._service.getPeserta();
+    const data = await this._service.getPeserta();
     return {
       status: "success",
-      peserta,
+      data,
     };
   }
 
