@@ -36,9 +36,7 @@ class PesertaHandler {
     const peserta = await this._service.getPeserta();
     return {
       status: "success",
-      data: {
-        peserta,
-      },
+      peserta,
     };
   }
 
